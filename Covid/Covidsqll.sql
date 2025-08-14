@@ -1,0 +1,78 @@
+CREATE DATABASE IF NOT EXISTS Covid;
+USE Covid;
+
+CREATE TABLE covid_deaths (
+    iso_code VARCHAR(10),
+    continent VARCHAR(50),
+    location VARCHAR(100),
+    date DATE,
+    population BIGINT,
+
+    total_cases DOUBLE,
+    new_cases DOUBLE,
+    total_deaths DOUBLE,
+    new_deaths DOUBLE,
+
+    total_cases_per_million DOUBLE,
+    new_cases_per_million DOUBLE,
+    total_deaths_per_million DOUBLE,
+    new_deaths_per_million DOUBLE,
+
+    reproduction_rate DOUBLE,
+    icu_patients DOUBLE,
+    icu_patients_per_million DOUBLE,
+    hosp_patients DOUBLE,
+    hosp_patients_per_million DOUBLE,
+
+    weekly_icu_admissions DOUBLE,
+    weekly_icu_admissions_per_million DOUBLE,
+    weekly_hosp_admissions DOUBLE,
+    weekly_hosp_admissions_per_million DOUBLE,
+
+    total_tests DOUBLE,
+    new_tests DOUBLE,
+    total_tests_per_thousand DOUBLE,
+    new_tests_per_thousand DOUBLE,
+    new_tests_smoothed DOUBLE,
+    new_tests_smoothed_per_thousand DOUBLE,
+
+    positive_rate DOUBLE,
+    tests_per_case DOUBLE,
+    tests_units VARCHAR(50),
+
+    total_vaccinations DOUBLE,
+    people_vaccinated DOUBLE,
+    people_fully_vaccinated DOUBLE,
+    total_boosters DOUBLE,
+    new_vaccinations DOUBLE,
+    new_vaccinations_smoothed DOUBLE,
+    total_vaccinations_per_hundred DOUBLE,
+    people_vaccinated_per_hundred DOUBLE,
+    people_fully_vaccinated_per_hundred DOUBLE,
+    total_boosters_per_hundred DOUBLE,
+    new_vaccinations_smoothed_per_million DOUBLE,
+
+    stringency_index DOUBLE,
+
+    population_density DOUBLE,
+    median_age DOUBLE,
+    aged_65_older DOUBLE,
+    aged_70_older DOUBLE,
+    gdp_per_capita DOUBLE,
+    extreme_poverty DOUBLE,
+    cardiovasc_death_rate DOUBLE,
+    diabetes_prevalence DOUBLE,
+    female_smokers DOUBLE,
+    male_smokers DOUBLE,
+    handwashing_facilities DOUBLE,
+    hospital_beds_per_thousand DOUBLE,
+    life_expectancy DOUBLE,
+    human_development_index DOUBLE,
+
+    excess_mortality_cumulative_absolute DOUBLE,
+    excess_mortality_cumulative DOUBLE,
+    excess_mortality DOUBLE,
+    excess_mortality_cumulative_per_million DOUBLE
+);
+
+
